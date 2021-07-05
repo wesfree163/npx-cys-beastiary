@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import roboto from './imagery/roboto.jpg';
+import React, { Component } from 'react';
+import Special from './components/Special'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App" className="App-header">
+      <Router>
+        <Switch>
+          <Route path="/Special" component={Special} exact/>
+        </Switch>
+      </Router>
+      <header>
+        <a href="/"><img src={roboto}/></a>
+        
+        
       </header>
+      <h1>Cyber Beastiary</h1>
+      <h2>A collection of dangers on the World Wide Web</h2>
+      <ul>
+        <li>Client-Side Vulnerabilities</li>
+        <li>Server-Side Vulnerabilities</li>
+        <li><a href="/Special">Special Cases</a></li>
+      </ul>
     </div>
   );
 }

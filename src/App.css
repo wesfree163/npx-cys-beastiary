@@ -1,7 +1,11 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Oxygen', sans-serif;
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,7 +15,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -24,8 +28,20 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  border-radius: 0.3em;
+  /* border-color: rgba(0, 0, 0, 0);
+  border-style: groove; */
+  border-width: 3px;
+  margin: 12px;
+  box-shadow: 0 0 16px 2px rgba(24, 24, 24, 0.666);
+}
+
+a:link{
+  text-decoration: none;
+}
+ul:visited{
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
